@@ -1,0 +1,11 @@
+
+<ion-view>
+	<ion-nav-title>Super Market</ion-nav-title>
+	<ion-content>	
+		<ion-list>
+	    	<ion-item ng-repeat="produto in listaDeProdutos" href="#/produtoescolhido/{{produto}}">
+	      		{{produto}}
+	    	</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>
