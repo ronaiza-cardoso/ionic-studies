@@ -4,7 +4,7 @@
 	<ion-content>	
 		<ion-list>
 	    	<ion-item ng-repeat="produto in listaDeProdutos" href="#/produtoescolhido/{{produto}}">
-	      		{{produto}}
+				{{produto.nome}} - R{{produto.preco | currency}}
 	    	</ion-item>
 		</ion-list>
 	</ion-content>
