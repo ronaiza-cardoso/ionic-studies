@@ -3,8 +3,20 @@
 	<ion-nav-title>Produto escolhido</ion-nav-title>
 	<ion-content>
 		<div class="card">
+            <div class="item item-divider">
+                {{produtoEscolhido.nome}}
+            </div>
 		  <div class="item item-text-wrap">
-		  	{{produtoEscolhido}}
+			  <ul class="list">
+				  <li class="item item-toggle" ng-repeat="lista in listaDeOpcoes">
+					  {{lista.peso}}
+					  <label class="toggle toggle-assertive">
+						  <input type="checkbox" ng-model="isTrue">
+						  <div class="track">
+							  <div class="handle"></div>
+						  </div>
+					  </label>
+				  </li>
 		  </div>
 		  <div class="item item-divider">
 		    Super Market
